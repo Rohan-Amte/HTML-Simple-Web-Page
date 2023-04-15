@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: aquamarine;
+            height: 100px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        
+        }
+        .banner{
+            display: block;
+        }
+        nav{
+            background-color: blueviolet;
+            height: 30px;
+            position: sticky;
+            top: 0;
+        }
+        ul{
+            list-style-type: none;
+            
+        }
+        li{
+            display: inline;
+     
+        }
+        li a{
+            text-decoration: none;
+            padding: 15px;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        .mainservices{
+            display: flex;
+           
+        }
+        .img1{
+            margin: 5px;
+            flex:4;
+
+        }
+        .img2{
+            margin: 5px;
+            flex:4;
+        }
+        .img3{
+            margin: 5px;
+            flex:4;
+        }
+        footer{
+            background-color: gray;
+            height: 100px;
+            text-align: center;
+        }
+
+        .maingallary{
+            display: flex;
+        }
+
+        .map{
+           
+            flex: 50%;
+            margin: 10px;
+            background-color: aqua;
+           
+        }
+        .youtube{
+           
+            flex: 50%;
+            margin: 10px;
+        }
+        #fbform{
+            display: flex;
+        }
+        .regfm{
+            flex: 50%;
+            margin: 10px;
+        }
+        .feedback{
+            flex: 50%;
+            margin: 10px;
+        }
+        @media (max-width:700px){
+            .mainservices,.maingallary,#fbform{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Web Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallary">Gallary</a></li>
+            <li><a href="#fbform">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="about" >
+        <h1 style="text-align: center;">About Us</h1>
+        <div class="banner">
+        <img src="assets/banner.jpg" width="100%" alt="banner">
+    </div>
+    </section>
+    <section id="services">
+        <h1 style="text-align: center;">Services</h1>
+        <section class="mainservices">
+            <div class="img1">
+                    <img src="assets/flowers-276014_960_720.jpg" alt="image1" width="100%">
+            </div>
+            <div class="img2">
+                <img src="assets/flowers-276014_960_720.jpg" alt="image2" width="100%">
+        </div>
+        <div class="img3">
+            <img src="assets/flowers-276014_960_720.jpg" alt="image3" width="100%">
+    </div>
+    </section>
+    </section>
+
+    <section id="gallary">
+        <h1 style="text-align: center;">Gallary</h1><br><h1 style="text-align: center;">Google Map & Youtube Video</h1>
+        <section class="maingallary">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7643.345974457876!2d74.24201862528159!3d16.69323973069902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1003e8dd18f77%3A0x8145dfbd008c138d!2sRajarampuri%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1674549165502!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="youtube">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/VvwnjIEIzyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    </section>
+    <section id="fbform">
+        <div class="regfm">
+        <hr>
+        <h1 style="background-color: aquamarine; text-align: center;">Registration Form</h1>
+        <hr>
+        <form style="font-size: x-large; background-color: cadetblue;">
+            <label>First Name :</label>
+            <input type="text" placeholder="First Name"><br><br>
+            <label>Last Name :</label>
+            <input type="text" placeholder="Last Name"><br><br>
+            <label>Mobile Number :</label>
+            <input type="text" placeholder="Enter Mobile Number"><br><br>
+            <label>Gender :</label>
+            <label><input type="radio" name="gender">Male</label>
+            <label><input type="radio" name="gender">Female</label>
+            <label><input type="radio" name="gender">Other</label>
+           <br><br> <label>Address :</label>
+            <textarea cols="30" rows="10"></textarea> 
+            <br><hr>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>           
+        </form>
+    </div>
+    <div class="feedback" style="background-color: blueviolet;">
+        <hr>
+        <h1 style="background-color: rgb(41, 99, 207); text-align: center;">Feedback Form</h1>
+        <hr>
+        <table style="font-size: x-large;">
+            <form>
+        <tbody>
+            <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Enter Full Name"></td>
+            </tr>
+            <tr>
+                <td>Mobile Number </td>
+                <td><input type="text" placeholder="Enter Valid Mobile Number"></td>
+            </tr>
+            <tr>
+                <td>Email ID </td>
+                <td><input type="text" placeholder="Enter Valid Email ID"></td>
+            </tr>
+            <tr>
+                <td>Give Your Feedback  </td>             
+            
+            
+                <td><label ><input type="radio" name="fb">Poor</label></td>
+            </tr>
+            <tr><td></td>
+                <td><label><input type="radio" name="fb">Good</label></td>
+            </tr>
+            <tr><td></td>
+                <td><label><input type="radio" name="fb">Very Good</label></td>
+            </tr>
+            <tr><td></td>
+                <td><label><input type="radio" name="fb">Average</label></td>
+            </tr>
+            <td colspan="2">
+            <tr>
+                
+            <td><button type="submit" style="width: 100px; height:30px; background-color: chocolate;" >submit</button></td>
+            <td><button type="reset" style="width: 100px; height:30px; background-color: chocolate;" >Clear</button></td>
+            </tr>
+        </td>
+        </form>
+    </table>
+    </div>
+    </section>
+    
+    <section>
+        <footer>
+            <h3>Thank You for Visit Our Page</h3>
+        </footer>
+    </section>
+    
+
+</body>
+</html>
